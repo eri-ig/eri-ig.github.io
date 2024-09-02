@@ -1,96 +1,71 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="auto">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portfolio</title>
-    <link rel="stylesheet" href="Style.css">
+  <script src="./assets/js/color-modes.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.122.0">
+  <title>Mi Portfolio</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/cover/">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/footers/">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="cover.css" rel="stylesheet">
 </head>
 
-<body>
-    <header> 
-        <nav><!--barra de navegacion-->
-            <ul>
-                <li>
-                    <image class="logo" src="./img0.jpeg" style="width: 40px ; height: 40px;"></image>
-                </li>
-                <li><a href="#yo">Sobre mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contact"> Para más Contacto</a></li>
-            </ul>
-        </nav><!--fin de barra de navegacion-->
+<body class="d-flex h-100 text-center text-bg-dark">
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column background1">
+    <header class="mb-auto">
+      <div>
+        <h3 class="float-md-start mb-0">Portfolio</h3>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="index.html">Inicio</a>
+          <a class="nav-link fw-bold py-1 px-0 active" href="projects.html">Proyectos</a>
+          <a class="nav-link fw-bold py-1 px-0 active" href="contacts.html">Contacto</a>
+        </nav>
+      </div>
     </header>
 
-    <section id="yo"><!--presentación-->
-        <image src="./img1.jpeg">
-            <h1><strong> MI NOMBRE ES ERIKA IGARZA</strong></h1>
-            <p>Soy estudiante de desarrollo web </p>
-    </section><!--fin de presentación-->
+    <main class="px-3">
+      <h1>Erika Igarza</h1>
+      <p class="lead">Transformo ideas en experiencias digitales excepcionales. Desde la conceptualización hasta la
+        implementación, mi trabajo fusiona creatividad y tecnología para ofrecer soluciones que inspiran. Explora mi
+        portafolio y descubre cómo puedo llevar tu próximo proyecto al siguiente nivel.</p>
+      <p class="lead">
+        <a href="aboutme.html" class="btn btn-lg btn-light fw-bold border-white bg-white">Sobre mi</a>
+      </p>
+    </main>
 
-    <section id="aboutme"><!--breve texto de presentación-->
-        <fieldset>
-        
-            <legend><strong>
-                    <h3 style="font-size: x-large; color: blue;" >Sobre mí:</h3>
-                </strong></legend>
-            <p class="inicial">Como estudiante comprometida con mi crecimiento personal y profesional, busco
-                constantemente oportunidades para aprender y desarrollar nuevas habilidades. Mi enfoque se centra en
-                adquirir conocimientos relevantes, explorar nuevas tecnologías y aplicarlas en proyectos prácticos.
-                Estoy motivada por el desafío de alcanzar metas ambiciosas y contribuir de manera significativa en mi
-                campo de estudio.Actualmente estoy inmersa en el aprendizaje de HTML, CSS y JavaScript para dominar
-                estas tecnologías fundamentales.</p>
-        </fieldset><!--fin de breve texto de presentación-->
-    </section>
 
-    <section id="proyectos"><!--sección de proyectos-->
-        <fieldset>
-            <legend ><strong>
-                    <h3 style="font-size: x-large; color: blue;">Proyectos:</h3>
-                </strong></legend>
-            <div class="proyectos">
-                <h3>Proyecto 1</h3>
-                <p>Próximamente...</p>
-                <p>Mientras dejo un ejemplo de relleno. En el "ver más" iría una descripción detallada del proyecto</p>
-                <a href="#">Ver más</a>
-                <div>
-                    <iframe src="https://assets.pinterest.com/ext/embed.html?id=1028509633631371753" height="436"
-                        width="236" frameborder="0" scrolling="no"></iframe>
-                </div>
 
-            </div>
-            <div class="proyectos">
-                <h3>Proyecto 2</h3>
-                <p>Próximamente...</p>
-                <p>Mientras dejo un ejemplo de relleno. En el "ver más" iría una descripción detallada del proyecto</p>
-                <a href="#">Ver más</a>
-                <div>
-                    <iframe src="https://assets.pinterest.com/ext/embed.html?id=696298792420019860" height="336"
-                        width="236" frameborder="0" scrolling="no"></iframe>
-                </div>
-            </div>
-        </fieldset>
-
-    </section><!--fin de sección de proyectos-->
-
-    <section id="contact"><!--sección de contacto-->
-        <h2 style="font-size: x-large;color: blue;">Contacto</h2>
-        <p>Estoy siempre abierta a nuevas oportunidades y colaboraciones. Si tienes alguna pregunta o propuesta no dude
-            en contactarme. Estaré encantada de responderle lo antes posible.
-        </p>
-        <form action="#" method="post">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
-    </section><!--fin de sección de contacto-->
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" style="color: white;">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+          </a>
+          <span class="mb-3 mb-md-0 " style="text-align: center;" >&copy; Erika Igarza</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-facebook" style="color: white;"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram" style="color: white;"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-github" style="color: white;"></i></a></i></li>
+        </ul>
+      </footer>
+    </div>
+  </div>
+  <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/color-modes.js"></script>
 
 </body>
 
