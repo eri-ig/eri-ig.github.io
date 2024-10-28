@@ -6,6 +6,12 @@ document.addEventListener('DOMContentLoaded', function () {
             href: "https://eri-ig.github.io/taller-final-jap/",
             src: "./Imagenes/ecomerce.jpeg",
             p: "Elaboración de un e-commerce"
+        },
+        {
+          name: 'AnimeWorld',
+          href: "https://eri-ig.github.io/api-sitio-web/",
+            src: "./Imagenes/animeWorld",
+            p: "Elaboración de un sitio de Anime"
         }
 
     ]
